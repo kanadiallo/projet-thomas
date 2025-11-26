@@ -1,0 +1,286 @@
+
+* {  /*generalite*/
+    padding: 0;
+    margin: 0;   
+    font-family: heebo, sans-serif, Arial, Helvetica;
+    color: #212243;
+}
+
+
+/*...............menu..............*/
+
+
+nav {    /*separation du barre de navigation*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1250px;
+    margin: auto;
+
+}
+
+.nav-links {   /*separation du menu */
+    display: flex;
+    gap: 60px;
+}
+
+.nav-link {     /*le bloc menu */ 
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*.............partie header...........*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    margin: 50px auto 50px;
+}
+
+#header-content { /*espace ente le paragraphe et l'img de thomas*/
+    width: 650px;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#subtitle {
+    font-size: 20px;
+    margin: 35px 0;
+}
+
+header img {  /*image de thomas */
+    width: 243px;
+    height:243px;
+    border-radius:50%;
+    object-fit:cover;
+    margin: auto 40px;
+    }
+
+#bouton {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #ff6464;
+    color: white;
+    border-radius: 2px;
+    padding: 7px 15px;
+}
+
+/*.............FIn HEADER............*/
+
+/*..............DEBUT DE LA SECTION BLOG.......*/
+
+#blog {
+    background-color: #EDF7FA;  
+    padding: 30px;
+}
+
+#articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sous-titre {
+    display: flex;
+    justify-content: space-between;
+
+}
+#blog-content {
+    background-color:#EDF7FA;
+    width: 1250px;
+    margin: auto;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.article-blog {
+    background-color: white;
+    border-radius: 4px;
+    width: 543px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.article-title {
+    font-size: 26px;
+}
+
+.date-ctg {
+    font-size: 18px;
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.article-description {
+    font-size: 16px;
+}
+h4 {
+    
+    color: rgb(108, 221, 221);
+}
+
+/*...................FIN de le 2e partie*/
+
+/*....................Debut de la 3e partie ...............*/
+
+#projets {
+    width: 1250px;
+    margin: auto;
+}
+
+.projet {
+    display:flex; 
+    gap: 50px; 
+    margin-bottom: 40px;
+}
+
+.projet-image {  /*traitement des images */ 
+    width: 246px;
+    height: 180px;
+    border-radius: 6px;
+}
+
+.projet-title {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 15px 0;
+}
+
+.date-type {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.projet-date {
+    background-color: #142850;
+    border-radius: 16px;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    width: 62px;
+    height: 25px;
+    text-align: center;
+}
+
+.projet-type {
+    font-size: 20px;
+    color: #8694a4;
+}
+
+/*..................Fin de la 3e partie.....*/
+
+/*.....................Debut de la 4e partie.......*/
+
+#contact {
+    width: 1250px;
+    margin: auto;
+}
+
+
+#contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; 
+}
+
+.contact-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+#email {
+    font-size: 16px;
+}
+
+.socials-link {
+    color:black;
+    font-size: 16px;
+}
+
+.mes-reseaux {
+    margin: 30px 0;
+}
+
+#coordonnees {
+    flex:1; 
+}
+
+form { /*partie à remplir */
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+
+}
+
+input, select, textarea {
+background-color: #f7f7f7;
+border: none;
+height: 46px;
+}
+
+.name {
+    margin: 10px 0;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    gap: 10px;
+    height: 56px;
+}
+
+.button-type { 
+    cursor: pointer; 
+}
+
+textarea {
+    height: 165px;
+}
+
+/*.............Fin de 4e partie .............*/
+
+/*................Debut du Footer.............*/
+
+footer {
+    width: 1250px;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+
+#icons-socials {
+    display: flex;
+    justify-content: center;
+    gap:25px;   
+
+}
+
+#copyright {
+    font-size: 14px;
+    color: #21243D;
+    font-style: italic;
+}
+
+
+/*...............FIN....DU......SITE..........*/
