@@ -14,9 +14,12 @@ nav {    /*separation du barre de navigation*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1250px;
+    max-width: 1250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     margin: auto;
-
+    margin-top: 30px;
 }
 
 .nav-links {   /*separation du menu */
@@ -31,12 +34,19 @@ nav {    /*separation du barre de navigation*/
     font-size: 20px;
 }
 
+#menu-buttom {
+    display: none;
+}
+
 /*.............partie header...........*/
 
 header {
     display: flex;
     justify-content: space-between;
-    width: 1250px;
+    max-width: 1250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     margin: 50px auto 50px;
 }
 
@@ -94,7 +104,10 @@ header img {  /*image de thomas */
 }
 #blog-content {
     background-color:#EDF7FA;
-    width: 1250px;
+    max-width: 1250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     margin: auto;
 }
 h2 {
@@ -109,6 +122,7 @@ h2 {
     width: 543px;
     padding: 10px 20px;
     box-sizing: border-box;
+    max-width: 48%;
 }
 
 .article-title {
@@ -135,7 +149,10 @@ h4 {
 /*....................Debut de la 3e partie ...............*/
 
 #projets {
-    width: 1250px;
+    max-width: 1250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     margin: auto;
 }
 
@@ -145,8 +162,17 @@ h4 {
     margin-bottom: 40px;
 }
 
+.image-projet {
+    flex: 1;
+    
+}
+
+.texte-projet {
+    flex: 3;
+}
+
 .projet-image {  /*traitement des images */ 
-    width: 246px;
+    max-width: 246px;
     height: 180px;
     border-radius: 6px;
 }
@@ -184,7 +210,10 @@ h4 {
 /*.....................Debut de la 4e partie.......*/
 
 #contact {
-    width: 1250px;
+    max-width: 1250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     margin: auto;
 }
 
@@ -211,7 +240,7 @@ h4 {
 }
 
 .mes-reseaux {
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 #coordonnees {
@@ -254,7 +283,7 @@ button {
 }
 
 textarea {
-    height: 165px;
+    height: 135px;
 }
 
 /*.............Fin de 4e partie .............*/
@@ -262,7 +291,10 @@ textarea {
 /*................Debut du Footer.............*/
 
 footer {
-    width: 1250px;
+    max-width: 1250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     margin: auto;
     text-align: center;
     margin-top: 80px;
@@ -282,5 +314,81 @@ footer {
     font-style: italic;
 }
 
+/**************la RESPONSIVE**************/
 
+@media(max-width: 700px) {/* à partir de 700px les modification du css de base*/
+
+    *{ 
+        width: 100%;
+        max-width: none;
+        
+    }
+
+    .nav-link {
+        display: none;
+    }
+    #menu-buttom {
+        display: block;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #header-content {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #articles {
+        flex-direction: column;
+        gap: 20px;
+      
+    }
+
+
+    h3.article-title {
+        margin-bottom: 10px;
+    }
+
+    p.date-ctg { 
+        width: 100%;
+    }
+
+    h4 {
+        display: none;
+    }
+
+    .article-blog {
+        max-width: none;
+        width: 100%;
+    
+    }
+
+    img.projet-image {
+        width: 100%;
+    }
+
+    .date-ctg {
+        gap: auto;
+        margin: auto 0; 
+    }
+
+    .projet {
+        flex-direction: column;   
+    }
+
+    .projet-image {
+        width: 100%;
+    }
+
+
+    #coordonnees {
+        display: none;
+    }
+}
 /*...............FIN....DU......SITE..........*/
